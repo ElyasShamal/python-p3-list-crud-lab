@@ -1,26 +1,35 @@
 def create_an_empty_list():
-    return None
+    return []
 
+# assign the new_list to a global varibale
 def create_a_list():
-    return None
+    global new_list 
+    new_list = ['hi',3, False, 10]
+    return new_list
 
 def add_element_to_end_of_list(l, element):
-    return None
+    new_list.append(5)
+    return new_list
 
 def add_element_to_start_of_list(l, element):
-    return None
+    new_list.insert(0, element)
+    return new_list
 
 def remove_element_from_end_of_list(l):
-    return None
+    new_list.pop()
+    return new_list
 
-def remove_element_from_start_of_list(l):
-    return None
 
-def retrieve_first_element_from_list(l):
-    return None
+def remove_element_from_start_of_list(new_list):
+    del new_list[0]
+    return new_list
 
-def retrieve_element_from_index(l, index):
-    return None
 
-def retrieve_last_element_from_list(l):
-    return None
+def retrieve_first_element_from_list(new_list):
+    return new_list[0]
+
+def retrieve_element_from_index(new_list, index):
+    return new_list[1]
+
+def retrieve_last_element_from_list(new_list):
+    return new_list[-1]

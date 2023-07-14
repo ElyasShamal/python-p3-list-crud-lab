@@ -39,7 +39,7 @@ class TestListCrud:
         assert(type(remove_element_from_start_of_list(create_a_list())) == list)
         assert(len(remove_element_from_start_of_list(create_a_list())) == 3)
         assert(remove_element_from_start_of_list([1, 2, 3, 4])[0] == 2)
-
+    
     def test_retrieves_first_element_from_list(self):
         '''contains a function "retrieve_first_element_from_list()" that retrieves the first element from a list.'''
         assert(retrieve_first_element_from_list([1, 2, 3, 4]) == 1)
